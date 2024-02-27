@@ -8,7 +8,7 @@ wss.on("connection", (ws)=>{
     ws.on("message", data => {
         console.log(`Client said: ${data}`);
 
-        ws.send(`Backend is looking good baby!`);
+        ws.send(`Admin: Backend is looking good baby!`);
     });
 
     ws.on("close", ()=>{
